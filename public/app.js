@@ -34,9 +34,7 @@ var redPin = L.icon({
     iconUrl: './assets/red-pin.png',
     iconSize: [38, 38],
     iconAnchor: [19, 38],
-    popupAnchor: [0, -40],
-    shadowSize: [68, 95],
-    shadowAnchor: [22, 94]
+    popupAnchor: [0, -40]
 });
 
 
@@ -49,4 +47,5 @@ const qS = L.marker([48.869560129483226, 2.3358638645569543],{icon:redPin}).bind
 const gB = L.marker([48.871282159004856, 2.3434818588892714],{icon:redPin}).bindPopup('Grands Boulevards')
 
 const stations = L.layerGroup([rS, sSD, sentier, bourse, qS, gB]).addTo(myMap)
+
 
